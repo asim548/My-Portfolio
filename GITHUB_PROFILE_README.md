@@ -45,6 +45,7 @@ Real-time predictive system for Lahore temperature forecasting using orchestrati
 
 - Email: **asimshehzad7065@gmail.com**
 - GitHub: [asim548](https://github.com/asim548)
+- Upwork: [Freelancer profile](https://www.upwork.com/freelancers/~014fedc448b9c0cd4d)
 - Fiverr: [Profile Link](https://www.fiverr.com/s/AymX06R)
 
 ---
