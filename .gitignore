@@ -1,0 +1,10 @@
+node_modules/
+.env
+.env.*
+
+# Local clones / other projects (keep portfolio repo deploy-sized)
+Info_Project/
+Mlops/
+
+# Original upload duplicate — site uses assets/profile-photo.jpg
+new profile.jpg
