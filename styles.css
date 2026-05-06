@@ -1,0 +1,189 @@
+:root {
+  --bg: #020814;
+  --ink: #f1f4ff;
+  --muted: #9ca8cb;
+  --card: #001733;
+  --card-2: #001325;
+  --line: #385277;
+  --accent: #ff7aa8;
+  --link: #8dbbff;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+}
+
+.container { width: min(1140px, 92%); margin: 0 auto; }
+
+.page-wrap {
+  padding: 2rem 0;
+  min-height: 100vh;
+}
+
+.portfolio-shell {
+  width: min(1220px, 95%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 240px;
+  gap: 1.4rem;
+}
+
+.portfolio-main,
+.portfolio-side {
+  background: linear-gradient(170deg, var(--card), var(--card-2));
+  border: 1px solid var(--line);
+  border-radius: 6px;
+}
+
+.portfolio-main { padding: 1.7rem 2rem; }
+.portfolio-side { padding: 1.2rem 1rem; }
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.brand {
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.menu { display: flex; gap: 0.8rem; flex-wrap: wrap; }
+.menu a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.82rem;
+  text-transform: lowercase;
+}
+.menu span { color: var(--accent); margin-right: 0.2rem; }
+
+.intro {
+  margin-top: 2.6rem;
+  display: grid;
+  grid-template-columns: 1fr 230px;
+  gap: 1.5rem;
+}
+
+.intro h1 {
+  margin: 0 0 1rem;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.05;
+}
+.intro h1 span { color: var(--accent); }
+
+.intro p {
+  color: var(--muted);
+  max-width: 580px;
+}
+
+.stack-box {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 0.7rem 1rem;
+  align-self: start;
+}
+.stack-box p { margin: 0 0 0.6rem; color: var(--muted); }
+.stack-box ul { margin: 0; padding-left: 1rem; }
+.stack-box li { color: #c5d7ff; margin-bottom: 0.2rem; }
+
+.block { margin-top: 2.6rem; }
+.block h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.block h2 span { color: var(--accent); margin-right: 0.6rem; }
+
+.block p { color: var(--muted); margin: 0 0 0.9rem; }
+
+.block-grid {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 1.2rem;
+  align-items: start;
+}
+
+.block-grid img {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+}
+
+.chips { display: flex; flex-wrap: wrap; gap: 0.45rem; }
+.chips span {
+  border: 1px solid var(--line);
+  border-radius: 30px;
+  padding: 0.32rem 0.68rem;
+  color: #dce8ff;
+  background: #022043;
+  font-size: 0.82rem;
+}
+
+.project-card {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.project-card h3 { margin-top: 0; font-size: 1.05rem; }
+.project-card a { color: var(--link); text-decoration: none; font-weight: 600; }
+
+.image-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.7rem;
+  margin: 0.8rem 0;
+}
+
+.image-row img {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+}
+
+.project-list p strong { color: #d8e5ff; }
+
+.contact-links { display: flex; flex-wrap: wrap; gap: 1rem; }
+.contact-links a { color: var(--link); text-decoration: none; }
+
+.portfolio-side .side-name {
+  margin: 0 0 1rem;
+  font-size: 0.75rem;
+  color: #dbe6ff;
+  font-weight: 700;
+}
+.portfolio-side h3 { font-size: 1.8rem; margin: 0 0 0.8rem; line-height: 1.1; }
+.portfolio-side p { color: var(--muted); font-size: 0.85rem; }
+.mini-box {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 0.7rem;
+  margin: 1rem 0;
+}
+.portfolio-side h4 { margin: 0.6rem 0; font-size: 1rem; }
+.portfolio-side h4 span { color: var(--accent); margin-right: 0.35rem; }
+.small { font-size: 0.78rem; line-height: 1.5; }
+
+.footer { text-align: center; color: #586581; font-size: 0.86rem; padding: 1rem 0 2rem; }
+.footer-content { padding: 0; }
+
+@media (max-width: 1020px) {
+  .portfolio-shell { grid-template-columns: 1fr; }
+  .portfolio-side { display: none; }
+  .intro, .block-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 640px) {
+  .portfolio-main { padding: 1rem; }
+  .block h2 { font-size: 1.45rem; }
+  .image-row { grid-template-columns: 1fr; }
+}
