@@ -38,13 +38,32 @@ const portfolioData = {
 
   projects: [
     {
-      title: "MarketMinds",
+      title: "CyberGuard — AI Cyberbullying Detection",
       description:
-        "AI-powered financial dashboard for stocks, forex, and crypto with intelligent signals, market sentiment modules, and trading workflows.",
-      image: "assets/moviehub-dashboard.png",
+        "End-to-end NLP and ML system that classifies social text into Safe, Toxic, and Severe Bullying. Streamlit app with real-time analysis, batch CSV screening, Plotly dashboards, and 72.5% test accuracy on 11K+ labeled tweets.",
+      images: [
+        { src: "assets/cyberguard-safe.png", alt: "CyberGuard safe text classification result", caption: "Safe" },
+        { src: "assets/cyberguard-toxic.png", alt: "CyberGuard toxic text classification result", caption: "Toxic" },
+        { src: "assets/cyberguard-severe.png", alt: "CyberGuard severe bullying classification result", caption: "Severe" },
+        { src: "assets/cyberguard-model-insights.png", alt: "CyberGuard model insights and metrics dashboard", caption: "Model Insights" },
+      ],
+      badges: ["Python", "NLP", "Streamlit", "scikit-learn"],
+      featured: "AI",
+      link: "https://github.com/asim548/CyberGuard-AI-Based-Cyberbullying-Detection-System.git",
+      wide: true,
+    },
+    {
+      title: "MarketMinds — AI Trading Platform",
+      description:
+        "AI-powered financial dashboard for stocks, forex, and crypto with live signals, ML predictions, market sentiment analysis, and trading workflow tools.",
+      images: [
+        { src: "assets/marketminds-dashboard.png", alt: "MarketMinds main trading dashboard", caption: "Dashboard" },
+        { src: "assets/marketminds-ai-picks.png", alt: "MarketMinds AI picks and analytics view", caption: "AI Picks" },
+      ],
       badges: ["MERN", "AI", "FinTech"],
       featured: "Featured",
       link: "https://github.com/asim548/MarketMinds.git",
+      wide: true,
     },
     {
       title: "MovieHub Web Platform",
@@ -56,7 +75,7 @@ const portfolioData = {
       link: "https://moviehub-asimshehzad7065-gmailcoms-projects.vercel.app/",
     },
     {
-      title: "Info Project (Secure Messaging)",
+      title: "CipherVault — Encrypted Messaging Platform",
       description:
         "End-to-end encrypted messaging and secure file sharing with AES-256-GCM, local key ownership, and cryptographic workflow controls.",
       image: "assets/info-login.png",
@@ -278,6 +297,38 @@ function initExperience() {
   });
 }
 
+function buildProjectMediaHtml(project) {
+  const featuredBadge = project.featured
+    ? `<span class="proj-featured-badge">${project.featured}</span>`
+    : "";
+
+  if (project.images && project.images.length > 0) {
+    const galleryItems = project.images
+      .map(
+        (img) =>
+          `<figure class="proj-gallery-item">
+            <img src="${img.src}" alt="${img.alt}" loading="lazy" />
+            ${img.caption ? `<figcaption>${img.caption}</figcaption>` : ""}
+          </figure>`
+      )
+      .join("");
+
+    return `
+      <div class="proj-gallery-wrapper">
+        ${featuredBadge}
+        <div class="proj-gallery">${galleryItems}</div>
+      </div>
+    `;
+  }
+
+  return `
+    <div class="proj-img-wrapper">
+      <img src="${project.image}" alt="${project.title}" loading="lazy" />
+      ${featuredBadge}
+    </div>
+  `;
+}
+
 function initProjects() {
   const projectsContainer = document.getElementById("projects-container");
   if (!projectsContainer) return;
@@ -300,10 +351,6 @@ function initProjects() {
     const badgesHtml = project.badges
       .map((badge) => `<span class="proj-badge">${badge}</span>`)
       .join("");
-    const featuredBadge = project.featured
-      ? `<span class="proj-featured-badge">${project.featured}</span>`
-      : "";
-
     let actionBtns = "";
     if (project.video && project.link) {
       actionBtns = `
@@ -337,13 +384,13 @@ function initProjects() {
       `;
     }
 
+    const colClass = project.wide ? "col-12" : "col";
+    const cardClass = project.wide ? "proj-card proj-card-wide" : "proj-card";
+
     const projectHtml = `
-      <div class="col" data-aos="fade-up" data-aos-delay="${index * 80}">
-        <div class="proj-card">
-          <div class="proj-img-wrapper">
-            <img src="${project.image}" alt="${project.title}" loading="lazy" class="lazyload" />
-            ${featuredBadge}
-          </div>
+      <div class="${colClass}" data-aos="fade-up" data-aos-delay="${index * 80}">
+        <div class="${cardClass}">
+          ${buildProjectMediaHtml(project)}
           <div class="proj-body">
             <h4 class="proj-title">${project.title}</h4>
             <div class="proj-badges">${badgesHtml}</div>
