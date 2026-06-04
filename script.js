@@ -125,10 +125,10 @@ const portfolioData = {
     },
     {
       type: "Portfolio",
-      value: "my-portfolio-alpha-kohl-69.vercel.app",
+      value: "asimshehzad.vercel.app",
       icon: "fas fa-globe",
       iconClass: "text-info",
-      link: "https://my-portfolio-alpha-kohl-69.vercel.app/",
+      link: "https://asimshehzad.vercel.app/",
       aosDelay: 240,
     },
   ],
