@@ -56,14 +56,10 @@ const portfolioData = {
       title: "MarketMinds — AI Trading Platform",
       description:
         "AI-powered financial dashboard for stocks, forex, and crypto with live signals, ML predictions, market sentiment analysis, and trading workflow tools.",
-      images: [
-        { src: "assets/marketminds-dashboard.png", alt: "MarketMinds main trading dashboard", caption: "Dashboard" },
-        { src: "assets/marketminds-ai-picks.png", alt: "MarketMinds AI picks and analytics view", caption: "AI Picks" },
-      ],
+      image: "assets/marketminds-ai-picks.png",
       badges: ["MERN", "AI", "FinTech"],
       featured: "Featured",
       link: "https://github.com/asim548/MarketMinds.git",
-      wide: true,
     },
     {
       title: "MovieHub Web Platform",
