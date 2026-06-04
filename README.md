@@ -5,9 +5,9 @@ Modern single-page portfolio website for showcasing full-stack and AI-integrated
 ## Included
 
 - Responsive portfolio website (`index.html`, `styles.css`, `script.js`)
-- Featured projects section with MarketMinds as hero
-- Contact section with email, GitHub, and Fiverr links
-- Embedded project screenshots in `assets/`
+- Navy/amber theme with Bootstrap, AOS animations, and Devicon skill cards
+- Dynamic sections: hero, skills, projects, experience, education, contact
+- Featured projects with screenshots in `assets/`
 - Ready-to-paste GitHub profile README template (`GITHUB_PROFILE_README.md`)
 
 ## Run Locally
