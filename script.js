@@ -66,9 +66,9 @@ const portfolioData = {
       description:
         "A complete MERN streaming platform with role-based dashboards, subscription flows, content management, and watchlist tracking.",
       image: "assets/moviehub-login.png",
-      badges: ["MERN", "Vercel", "RBAC"],
-      featured: "Live",
-      link: "https://moviehub-asimshehzad7065-gmailcoms-projects.vercel.app/",
+      badges: ["MERN", "Node.js", "RBAC"],
+      featured: "MERN",
+      link: "https://github.com/asim548/Movie-Hub-Web-Project.git",
     },
     {
       title: "CipherVault — Encrypted Messaging Platform",

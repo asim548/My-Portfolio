@@ -5,6 +5,9 @@ node_modules/
 # Local clones / other projects (keep portfolio repo deploy-sized)
 Info_Project/
 Mlops/
+_cyberguard-repo/
+_profile-repo/
 
-# Original upload duplicate — site uses assets/profile-photo.jpg
+# Original upload duplicates — site uses assets/profile-photo.jpg
 new profile.jpg
+WhatsApp Image*.jpeg
