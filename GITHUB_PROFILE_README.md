@@ -1,7 +1,7 @@
 <h1 align="center">Hi There! I am Asim. 👋</h1>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=600&size=22&duration=2500&pause=700&color=1F6FEB&center=true&vCenter=true&width=700&lines=Full+Stack+Developer;MERN+Stack+Specialist;Building+Scalable+Web+Applications" alt="Typing intro" />
+  <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=600&size=22&duration=2500&pause=700&color=1F6FEB&center=true&vCenter=true&width=700&lines=Full+Stack+Developer;DevOps+Engineer;AI+Engineer;Building+Scalable+Web+%26+AI+Automation" alt="Typing intro" />
 </p>
 
 <p align="center">
@@ -9,12 +9,12 @@
 </p>
 
 <p align="center">
-  Full-stack developer focused on clean architecture, secure implementation,
-  and scalable products that solve real-world problems.
+  Results-driven Full Stack, DevOps &amp; AI Engineer with hands-on experience building scalable web applications,
+  deploying production-grade cloud infrastructure, and designing intelligent AI automation workflows.
 </p>
 
 <p align="center">
-  📍 Islamabad, Pakistan &nbsp; • &nbsp; 📧 asimshehzad7065@gmail.com
+  📍 Kot Sultan, Layyah, Pakistan &nbsp; • &nbsp; 📧 asimshehzad7065@gmail.com
 </p>
 
 <h2 align="center">Connect With Me</h2>
@@ -51,32 +51,75 @@
 <h2 align="center">Skills</h2>
 
 <p align="center">
-  <i>Technologies and tools I use to design, build, and ship production-ready applications.</i>
+  <i>Technologies and tools I use across the full software lifecycle — from frontend to cloud deployment and AI automation.</i>
 </p>
 
+<p align="center"><b>Languages</b></p>
+
 <p align="center">
-  <img src="https://img.shields.io/badge/MERN%20Stack-1F6FEB?style=for-the-badge&logo=mongodb&logoColor=white" alt="MERN Stack" />
-  <img src="https://img.shields.io/badge/Full--Stack%20Development-1F6FEB?style=for-the-badge" alt="Full-Stack Development" />
   <img src="https://img.shields.io/badge/JavaScript-1F6FEB?style=for-the-badge&logo=javascript&logoColor=white" alt="JavaScript" />
   <img src="https://img.shields.io/badge/Python-1F6FEB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
   <img src="https://img.shields.io/badge/Java-1F6FEB?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" />
   <img src="https://img.shields.io/badge/C++-1F6FEB?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C++" />
+</p>
+
+<p align="center"><b>Frontend</b></p>
+
+<p align="center">
   <img src="https://img.shields.io/badge/React.js-1F6FEB?style=for-the-badge&logo=react&logoColor=white" alt="React.js" />
   <img src="https://img.shields.io/badge/Next.js-1F6FEB?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
+  <img src="https://img.shields.io/badge/HTML5-1F6FEB?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
+  <img src="https://img.shields.io/badge/CSS3-1F6FEB?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
+  <img src="https://img.shields.io/badge/Tailwind%20CSS-1F6FEB?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
+</p>
+
+<p align="center"><b>Backend &amp; Databases</b></p>
+
+<p align="center">
   <img src="https://img.shields.io/badge/Node.js-1F6FEB?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
   <img src="https://img.shields.io/badge/Express.js-1F6FEB?style=for-the-badge&logo=express&logoColor=white" alt="Express.js" />
   <img src="https://img.shields.io/badge/Spring%20Boot-1F6FEB?style=for-the-badge&logo=springboot&logoColor=white" alt="Spring Boot" />
-  <img src="https://img.shields.io/badge/HTML%2FCSS-1F6FEB?style=for-the-badge&logo=html5&logoColor=white" alt="HTML/CSS" />
-  <img src="https://img.shields.io/badge/MongoDB-1F6FEB?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
-  <img src="https://img.shields.io/badge/MySQL-1F6FEB?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
+  <img src="https://img.shields.io/badge/FastAPI-1F6FEB?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI" />
   <img src="https://img.shields.io/badge/Flask-1F6FEB?style=for-the-badge&logo=flask&logoColor=white" alt="Flask" />
   <img src="https://img.shields.io/badge/REST%20APIs-1F6FEB?style=for-the-badge" alt="REST APIs" />
-  <img src="https://img.shields.io/badge/API%20Integration-1F6FEB?style=for-the-badge" alt="API Integration" />
+  <img src="https://img.shields.io/badge/MongoDB-1F6FEB?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
+  <img src="https://img.shields.io/badge/MySQL-1F6FEB?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
+  <img src="https://img.shields.io/badge/PostgreSQL-1F6FEB?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+</p>
+
+<p align="center"><b>DevOps &amp; Cloud</b></p>
+
+<p align="center">
   <img src="https://img.shields.io/badge/Docker-1F6FEB?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
-  <img src="https://img.shields.io/badge/CI%2FCD-1F6FEB?style=for-the-badge&logo=githubactions&logoColor=white" alt="CI/CD" />
-  <img src="https://img.shields.io/badge/Deployment%20Automation-1F6FEB?style=for-the-badge" alt="Deployment Automation" />
-  <img src="https://img.shields.io/badge/Information%20Security-1F6FEB?style=for-the-badge" alt="Information Security" />
-  <img src="https://img.shields.io/badge/Git%20%26%20GitHub-1F6FEB?style=for-the-badge&logo=git&logoColor=white" alt="Git & GitHub" />
+  <img src="https://img.shields.io/badge/CI%2FCD%20Pipelines-1F6FEB?style=for-the-badge&logo=githubactions&logoColor=white" alt="CI/CD Pipelines" />
+  <img src="https://img.shields.io/badge/Git-1F6FEB?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
+  <img src="https://img.shields.io/badge/GitHub-1F6FEB?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+  <img src="https://img.shields.io/badge/Vercel-1F6FEB?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel" />
+  <img src="https://img.shields.io/badge/Render-1F6FEB?style=for-the-badge&logo=render&logoColor=white" alt="Render" />
+  <img src="https://img.shields.io/badge/AWS-1F6FEB?style=for-the-badge&logo=amazonaws&logoColor=white" alt="AWS" />
+</p>
+
+<p align="center"><b>AI / ML</b></p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/scikit--learn-1F6FEB?style=for-the-badge&logo=scikitlearn&logoColor=white" alt="scikit-learn" />
+  <img src="https://img.shields.io/badge/NLTK-1F6FEB?style=for-the-badge" alt="NLTK" />
+  <img src="https://img.shields.io/badge/Pandas-1F6FEB?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas" />
+  <img src="https://img.shields.io/badge/Streamlit-1F6FEB?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit" />
+  <img src="https://img.shields.io/badge/TF--IDF-1F6FEB?style=for-the-badge" alt="TF-IDF" />
+  <img src="https://img.shields.io/badge/Computer%20Vision-1F6FEB?style=for-the-badge" alt="Computer Vision" />
+</p>
+
+<p align="center"><b>AI Automation</b></p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/n8n-1F6FEB?style=for-the-badge&logo=n8n&logoColor=white" alt="n8n" />
+  <img src="https://img.shields.io/badge/Zapier-1F6FEB?style=for-the-badge&logo=zapier&logoColor=white" alt="Zapier" />
+  <img src="https://img.shields.io/badge/Make%20(Integromat)-1F6FEB?style=for-the-badge" alt="Make (Integromat)" />
+  <img src="https://img.shields.io/badge/GoHighLevel-1F6FEB?style=for-the-badge" alt="GoHighLevel" />
+  <img src="https://img.shields.io/badge/AI%20Agent%20Workflows-1F6FEB?style=for-the-badge" alt="AI Agent Workflows" />
+  <img src="https://img.shields.io/badge/CRM%20Automation-1F6FEB?style=for-the-badge" alt="CRM Automation" />
+  <img src="https://img.shields.io/badge/Webhook%20Integrations-1F6FEB?style=for-the-badge" alt="Webhook Integrations" />
 </p>
 
 <p align="center">
