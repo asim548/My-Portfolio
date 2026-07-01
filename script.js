@@ -120,12 +120,20 @@ const portfolioData = {
       aosDelay: 60,
     },
     {
+      type: "LinkedIn",
+      value: "linkedin.com/in/asim-shehzad-09145141a",
+      icon: "fab fa-linkedin",
+      iconClass: "text-primary",
+      link: "https://www.linkedin.com/in/asim-shehzad-09145141a",
+      aosDelay: 120,
+    },
+    {
       type: "Upwork",
       value: "Freelancer profile",
       icon: "fab fa-upwork",
       iconClass: "text-success",
       link: "https://www.upwork.com/freelancers/~014fedc448b9c0cd4d?mp_source=share",
-      aosDelay: 120,
+      aosDelay: 180,
     },
     {
       type: "Fiverr",
@@ -133,7 +141,7 @@ const portfolioData = {
       icon: "fas fa-briefcase",
       iconClass: "text-warning",
       link: "https://www.fiverr.com/s/kLPammN",
-      aosDelay: 180,
+      aosDelay: 240,
     },
     {
       type: "Portfolio",
@@ -141,7 +149,7 @@ const portfolioData = {
       icon: "fas fa-globe",
       iconClass: "text-info",
       link: "https://asimshehzad.vercel.app/",
-      aosDelay: 240,
+      aosDelay: 300,
     },
   ],
 };
