@@ -50,6 +50,20 @@ const portfolioData = {
 
   projects: [
     {
+      title: "ASNIT Enterprises — Corporate Website & Portal",
+      description:
+        "Full-stack corporate site for an engineering firm in Multan, Pakistan. Next.js 14 + Tailwind with Home, About, Services, Projects, Team, News, and Contact; Google OAuth (NextAuth), MongoDB Atlas for users/leads/feedback, WhatsApp CTA, and navy/gold branding — live on Vercel.",
+      images: [
+        { src: "assets/asnit-home.png", alt: "ASNIT Enterprises homepage hero and navigation", caption: "Home" },
+        { src: "assets/asnit-projects.png", alt: "ASNIT Enterprises projects gallery with category filters", caption: "Projects" },
+        { src: "assets/asnit-enterprises.png", alt: "ASNIT Enterprises landing page with Get a Quote CTA", caption: "Landing" },
+      ],
+      badges: ["Next.js", "Tailwind CSS", "NextAuth", "MongoDB", "Vercel"],
+      featured: "Client",
+      link: "https://asnitenterprises.vercel.app/",
+      wide: true,
+    },
+    {
       title: "CyberGuard — AI Cyberbullying Detection",
       description:
         "End-to-end NLP and ML system that classifies social text into Safe, Toxic, and Severe Bullying. Streamlit app with real-time analysis, batch CSV screening, Plotly dashboards, and 72.5% test accuracy on 11K+ labeled tweets.",
