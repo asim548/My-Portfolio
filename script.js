@@ -50,6 +50,32 @@ const portfolioData = {
 
   projects: [
     {
+      title: "NSE Nifty 50 Market Intelligence & Alert Platform",
+      description:
+        "Production Python monitoring system for all Nifty 50 stocks using official NSE data. Hourly intraday alerts for price moves and volume spikes, daily long-term BUY/SELL signals from trend-slope and peak/trough analysis, delivered via Telegram and Email with SQLite logging and CSV audit export. Auto-runs in market hours with crash-safe handling for NSE outages and background-service deployment on Windows and Linux.",
+      images: [
+        {
+          src: "assets/nse-alert-buy-signal.png",
+          alt: "NSE Market Intelligence BUY Signal email alert for INFY with trough rule analysis",
+          caption: "BUY Signal",
+        },
+        {
+          src: "assets/nse-alert-intraday.png",
+          alt: "NSE intraday market update email for INFY with price, volume, and OHLC data",
+          caption: "Intraday Alert",
+        },
+        {
+          src: "assets/nse-alert-email-plain.png",
+          alt: "Plain-text NSE alert email showing sustained slope BUY signal for INFY",
+          caption: "Slope Signal",
+        },
+      ],
+      badges: ["Python", "Pandas", "SQLite", "APScheduler", "Telegram Bot", "SMTP"],
+      featured: "Live",
+      link: "https://github.com/asim548/nse-market-intelligence.git",
+      wide: true,
+    },
+    {
       title: "ASNIT Enterprises — Corporate Website & Portal",
       description:
         "Full-stack corporate site for an engineering firm in Multan, Pakistan. Next.js 14 + Tailwind with Home, About, Services, Projects, Team, News, and Contact; Google OAuth (NextAuth), MongoDB Atlas for users/leads/feedback, WhatsApp CTA, and navy/gold branding — live on Vercel.",
