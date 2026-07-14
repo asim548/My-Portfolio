@@ -37,7 +37,7 @@ const portfolioData = {
     {
       company: "NOXATECH ORG",
       title: "Software Engineering",
-      duration: "June 2025 – Aug 2025",
+      duration: "June 2025 – Aug 2025 · Remote",
       icon: "fas fa-laptop-code",
       responsibilities: [
         "Contributed to a Hospital Management System using C++ over an 8-week structured program.",
@@ -178,7 +178,13 @@ document.addEventListener("DOMContentLoaded", function () {
   initContact();
   initLazyLoading();
   initParticles();
+  initFooter();
 });
+
+function initFooter() {
+  const yearEl = document.getElementById("footer-year");
+  if (yearEl) yearEl.textContent = String(new Date().getFullYear());
+}
 
 function initLoadingOverlay() {
   window.addEventListener("load", function () {
