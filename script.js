@@ -202,6 +202,7 @@ document.addEventListener("DOMContentLoaded", function () {
   initExperience();
   initProjects();
   initContact();
+  initContactForm();
   initLazyLoading();
   initParticles();
   initFooter();
@@ -527,6 +528,98 @@ function initContact() {
       </div>
     `;
     contactContainer.innerHTML += contactHtml;
+  });
+}
+
+const CONTACT_INBOX = "asimshehzad7065@gmail.com";
+
+function initContactForm() {
+  const form = document.getElementById("contact-form");
+  if (!form) return;
+
+  const submitBtn = document.getElementById("contact-submit");
+  const statusEl = document.getElementById("contact-form-status");
+  const fields = ["contact-name", "contact-email", "contact-subject", "contact-message"].map(
+    (id) => document.getElementById(id)
+  );
+
+  const setStatus = (message, type) => {
+    if (!statusEl) return;
+    statusEl.textContent = message;
+    statusEl.classList.remove("is-success", "is-error");
+    if (type) statusEl.classList.add(type);
+  };
+
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    const honeypot = form.querySelector('[name="_gotcha"]');
+    if (honeypot && honeypot.value.trim()) return;
+
+    let valid = true;
+    fields.forEach((field) => {
+      if (!field) return;
+      const empty = !field.value.trim();
+      field.classList.toggle("is-invalid", empty);
+      if (empty) valid = false;
+    });
+
+    const emailField = document.getElementById("contact-email");
+    if (emailField && emailField.value.trim() && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailField.value.trim())) {
+      emailField.classList.add("is-invalid");
+      valid = false;
+    }
+
+    if (!valid) {
+      setStatus("Please fill in all fields with a valid email.", "is-error");
+      return;
+    }
+
+    const payload = {
+      name: document.getElementById("contact-name").value.trim(),
+      email: document.getElementById("contact-email").value.trim(),
+      subject: document.getElementById("contact-subject").value.trim(),
+      message: document.getElementById("contact-message").value.trim(),
+      _subject: `Portfolio message: ${document.getElementById("contact-subject").value.trim()}`,
+      _template: "table",
+      _captcha: "false",
+    };
+
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending…';
+    }
+    setStatus("Sending your message…");
+
+    try {
+      const response = await fetch(`https://formsubmit.co/ajax/${CONTACT_INBOX}`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      const result = await response.json().catch(() => ({}));
+      if (!response.ok) {
+        throw new Error(result.message || "Failed to send message.");
+      }
+
+      form.reset();
+      fields.forEach((field) => field && field.classList.remove("is-invalid"));
+      setStatus("Message sent! I'll reply to your email soon.", "is-success");
+    } catch (error) {
+      setStatus(
+        "Couldn't send right now. Email me directly at asimshehzad7065@gmail.com.",
+        "is-error"
+      );
+    } finally {
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+      }
+    }
   });
 }
 
